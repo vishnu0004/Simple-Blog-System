@@ -1,0 +1,83 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for the blog posts */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each post */
+.blog-post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Links for Edit and Delete */
+.blog-post a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Styling when no posts are found */
+.no-posts {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+}
+
+.submit-btn {
+    background-color: #007BFF; /* Blue color */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px; /* Add some space below the button */
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
