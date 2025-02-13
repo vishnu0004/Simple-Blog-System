@@ -15,7 +15,7 @@
             // Fetch the post to be edited
             if (isset($_GET['id'])) {
                 $id = $_GET['id'];
-                $sql = "SELECT * FROM blogt WHERE id = '$id'";
+                $sql = "SELECT * FROM posts WHERE id = '$id'";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
@@ -37,7 +37,7 @@
                 $title = $_POST['title'];
                 $content = $_POST['content'];
 
-                $edit = "UPDATE blogt SET title='$title', content='$content' WHERE id='$id'";
+                $edit = "UPDATE posts SET title='$title', content='$content' WHERE id='$id'";
                 $run = $conn->query($edit);
                 if ($run) {
                     header("Location: index.php");

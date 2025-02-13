@@ -10,7 +10,7 @@
 <?php
 include('../config.php');
 
-$sql = "SELECT * FROM blogt ORDER BY create_at DESC";
+$sql = "SELECT * FROM posts ORDER BY create_at DESC";
 $result = $conn->query($sql);
 
 echo '<div class="blog-container">'; // Start the blog container
